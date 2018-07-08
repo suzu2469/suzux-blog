@@ -1,6 +1,6 @@
 module.exports = {
   head: {
-    title: 'Blog RTA',
+    title: 'Suzux Blog',
     meta: [{
         charset: 'utf-8'
       },
