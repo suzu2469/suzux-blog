@@ -1,5 +1,5 @@
 {
-  "name": "blog-rta",
+  "name": "Suzux blog",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -8,6 +8,8 @@
     "dev": "node server/app.js"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.1",
+    "body-parser": "^1.18.3",
     "bulma": "^0.7.1",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",

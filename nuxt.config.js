@@ -23,5 +23,8 @@ module.exports = {
   }, {
     src: '@/assets/css/app.css',
     lang: 'css'
-  }]
+  }],
+  modules: [
+    '@nuxtjs/axios'
+  ]
 }

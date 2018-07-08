@@ -4,7 +4,9 @@
       lined-heading
         h1.title Articles
       .columns.post-wrap
-        listed-post(v-for="(post, index) in posts", :post="post", index="index").is-one-third.column
+        p(v-if="posts.length <= 0").is-size-6 まだ投稿はありません（すまん）
+        template(v-else)
+          listed-post(v-for="(post, index) in posts", :post="post", index="index").is-one-third.column
 </template>
 
 <script>

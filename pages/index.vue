@@ -7,26 +7,17 @@
 <script>
 import Helo from '@/components/organisms/Helo'
 import PostList from '@/components/organisms/PostList'
+import { mapState } from 'vuex'
 
 export default {
   components: { helo: Helo, PostList },
-  data () {
-    return {
-      posts: [
-        {
-          title: 'Sample',
-          body: 'sample sample sample'
-        },
-        {
-          title: 'Sample',
-          body: 'sample sample sample'
-        },
-        {
-          title: 'Sample',
-          body: 'sample sample sample'
-        }
-      ]
-    }
+  async fetch ({ store }) {
+    if (store.state.post.list.length <= 0) await store.dispatch('post/fetchPosts')
+  },
+  computed: {
+    ...mapState({
+      posts: state => state.post.list
+    })
   }
 }
 </script>
