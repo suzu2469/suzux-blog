@@ -1,6 +1,6 @@
 <template lang="pug">
   div#post
-    post
+    post(:post="currentPost")
 </template>
 
 <script>
@@ -10,7 +10,7 @@ import Post from '@/components/organisms/Post'
 export default {
   components: { post: Post },
   async fetch({ store, redirect, params }) {
-    if (store.state.post.list.lenght <= 0) await store.dispatch('post/fetchPosts')
+    if (store.state.post.list.length <= 0) await store.dispatch('post/fetchPosts')
     const isExists = store.state.post.list.find(post => post.id == params.id)
     if (!isExists) redirect('/')
   },

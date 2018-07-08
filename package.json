@@ -1,5 +1,5 @@
 {
-  "name": "Suzux blog",
+  "name": "Suzuxblog",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "bulma": "^0.7.1",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
+    "marked": "^0.4.0",
     "mysql2": "^1.5.3",
     "node-sass": "^4.9.2",
     "nuxt": "^1.4.1",
