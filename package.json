@@ -1,0 +1,28 @@
+{
+  "name": "blog-rta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=production nuxt build & node server/app.js",
+    "dev": "node server/app.js"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "express": "^4.16.3",
+    "mysql2": "^1.5.3",
+    "node-sass": "^4.9.2",
+    "nuxt": "^1.4.1",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.0.0",
+    "reset-css": "^4.0.1",
+    "sass-loader": "^7.0.3",
+    "sequelize": "^4.38.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0"
+  }
+}

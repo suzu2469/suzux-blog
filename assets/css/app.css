@@ -1,0 +1,8 @@
+body {
+  font-family: 'Noto Sans Japanese';
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}

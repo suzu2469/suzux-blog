@@ -1,0 +1,6 @@
+module.exports = {
+  'config': './server/db/config.json',
+  'migrations-path': './server/db/migrations',
+  'models-path': './server/db/models',
+  'seeders-path': './server/db/seeders'
+}
