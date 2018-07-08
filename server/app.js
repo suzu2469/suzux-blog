@@ -4,6 +4,7 @@ const {
   Nuxt,
   Builder
 } = require('nuxt')
+require('dotenv').config()
 
 const isProd = process.env.NODE_ENV === 'production'
 

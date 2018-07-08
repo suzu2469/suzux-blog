@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "bulma": "^0.7.1",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "mysql2": "^1.5.3",
     "node-sass": "^4.9.2",
     "nuxt": "^1.4.1",
+    "pg": "^7.4.3",
     "pug": "^2.0.3",
     "pug-loader": "^2.4.0",
     "pug-plain-loader": "^1.0.0",
